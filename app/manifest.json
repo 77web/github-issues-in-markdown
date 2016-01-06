@@ -25,6 +25,7 @@
         "https://*.esa.io/posts/*"
       ],
       "js": [
+        "bower_components/jquery/dist/jquery.min.js",
         "scripts/contentscript.js"
       ]
     }
