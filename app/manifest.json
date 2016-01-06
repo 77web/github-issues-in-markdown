@@ -1,8 +1,8 @@
 {
-  "name": "github issues on esa.io",
+  "name": "github issues in markdown",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "github issues on esa.io",
+  "description": "github issues in markdown",
   "icons": {
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
@@ -21,9 +21,7 @@
   ],
   "content_scripts": [
     {
-      "matches": [
-        "https://*.esa.io/posts/*"
-      ],
+      "matches": ["https://*/*", "http://*/*"],
       "js": [
         "bower_components/jquery/dist/jquery.min.js",
         "scripts/contentscript.js"
