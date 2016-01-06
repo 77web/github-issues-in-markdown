@@ -21,6 +21,9 @@
   ],
   "content_scripts": [
     {
+      "matches": [
+        "https://*.esa.io/posts/*"
+      ],
       "js": [
         "scripts/contentscript.js"
       ]
