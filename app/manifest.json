@@ -14,7 +14,11 @@
       "scripts/background.js"
     ]
   },
-  "permissions": [],
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
   "content_scripts": [
     {
       "js": [
@@ -22,5 +26,4 @@
       ]
     }
   ]
-
 }
