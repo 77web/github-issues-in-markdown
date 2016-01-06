@@ -10,10 +10,14 @@ $(function(){
   $('textarea').on('blur', function(e){
     var text = $(e.target).val();
 
-    var re = /([\w]+\/[\w]+#[0-9]+)/g;
+    var issueRegExp = '[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_]+#[0-9]+';
+    var re = new RegExp('(' + issueRegExp + ')', 'g');
+    var sanitizeRe = new RegExp('\[' + issueRegExp + '\]', 'g');
+
+    var sanitizedText = text.replace(sanitizeRe, '');console.debug(sanitizedText);
     var issues = [];
     var match = null;
-    while (match = re.exec(text)) {
+    while (match = re.exec(sanitizedText)) {
       issues.push(match[0]);
     }
 
