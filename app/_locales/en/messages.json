@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "github issues on esa",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "using github issues easier on esa.io",
+    "description": "The description of the application"
+  }
+}
